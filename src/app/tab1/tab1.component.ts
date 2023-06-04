@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./tab1.component.css']
 })
 export class Tab1Component {
+  nome:string = "";
+  cognome:string = "";
+  email:string = "";
+  telefono:string = "";
+  idacquario:number = 0;
 
+  
 }

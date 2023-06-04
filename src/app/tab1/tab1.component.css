@@ -1,5 +1,5 @@
 div {
-    background-color: #333;
+    background-color: rgba(9, 48, 69, 0.84);
     height: 7%;
 }
 
@@ -27,17 +27,17 @@ div a:hover {
 .left {
     left: 0;
     width: 40%;
-    background-color: #111;
+    background-color: rgba(23, 71, 97, 0.84);
 }
   
 .right {
     right: 0;
     width: 60%;
-    background-color: rgb(80, 77, 77);
+    background-color: rgba(50, 106, 136, 0.84);
 }
   
 .centered {
-    background-color: #111;
+    background-color: unset;
     position: absolute;
     top: 30%;
     left: 25%;
@@ -60,8 +60,11 @@ div a:hover {
 .centered button {
     position: relative;
     left: 200%;
+    background-color: rgba(10, 47, 67, 0.84);
+    color: white;
 }
 
 th {
     min-width: 130px;
+    color: rgba(7, 38, 55, 0.84);
 }
