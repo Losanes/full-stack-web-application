@@ -1,0 +1,31 @@
+h3 {
+    margin-top: 0;
+    background-color: rgba(23, 133, 192, 0.84);
+    color: white;
+}
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+  
+.right {
+    left: 25%;
+    width: 75%;
+    background-color: rgb(80, 77, 77);
+    background-image: url("../../assets/menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.centered {
+    background-color: #111;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}

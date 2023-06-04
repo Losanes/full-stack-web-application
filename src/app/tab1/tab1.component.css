@@ -1,0 +1,67 @@
+div {
+    background-color: #333;
+    height: 7%;
+}
+
+div a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+div a:hover {
+    color: white;
+}
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 7%;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+  
+.left {
+    left: 0;
+    width: 40%;
+    background-color: #111;
+}
+  
+.right {
+    right: 0;
+    width: 60%;
+    background-color: rgb(80, 77, 77);
+}
+  
+.centered {
+    background-color: #111;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.sep label {
+    color: white;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+}
+
+.sep input {
+    width: fit-content;
+    position: absolute;
+    left: 200%;
+}
+
+.centered button {
+    position: relative;
+    left: 200%;
+}
+
+th {
+    min-width: 130px;
+}
