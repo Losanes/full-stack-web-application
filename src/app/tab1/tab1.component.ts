@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Handler } from '../handler';
 
 @Component({
   selector: 'app-tab1',
@@ -12,5 +13,5 @@ export class Tab1Component {
   telefono:string = "";
   idacquario:number = 0;
 
-  
+  constructor(public handler:Handler){}
 }

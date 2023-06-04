@@ -9,30 +9,30 @@
     <div class="centered" style="text-align: justify;">
         <p class="sep">
             <label for="nome">Nome</label>
-            <input type="text" name="nome">
+            <input type="text" name="nome" [(ngModel)]="nome">
         </p>
         <br><br>
         <p class="sep">
             <label for="cognome">Cognome</label>
-            <input type="text" name="cognome">
+            <input type="text" name="cognome" [(ngModel)]="cognome">
         </p>        
         <br><br>
         <p class="sep">
             <label for="email">Email</label>
-            <input type="text" name="email">
+            <input type="text" name="email" [(ngModel)]="email">
         </p>
         <br><br>
         <p class="sep">
             <label for="telefono">Telefono</label>
-            <input type="text" name="telefono">
+            <input type="text" name="telefono" [(ngModel)]="telefono">
         </p>
         <br><br>
         <p class="sep">
             <label for="idacquario">IDAcquario</label>
-            <input type="number" name="idacquario">
+            <input type="number" name="idacquario" [(ngModel)]="idacquario">
         </p>
         <br><br>
-        <button>Fatto!</button>
+        <button (click)="handler.writePersonale(nome, cognome, email, telefono, idacquario)">Fatto!</button>
     </div>
   </div>
   
@@ -52,8 +52,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    
+                <tr *ngFor="let pers of handler.personale">
+                    <td>{{pers.id}}</td>
+                    <td>{{pers.nome}}</td>
+                    <td>{{pers.cognome}}</td>
+                    <td>{{pers.email}}</td>
+                    <td>{{pers.telefono}}</td>
+                    <td>{{pers.idacquario}}</td>
                 </tr>
             </tbody>
         </table>
